@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#111;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.player{
+    width:350px;
+    text-align:center;
+    background:#1c1c1c;
+    padding:30px;
+    border-radius:15px;
+}
+
+.logo{
+    width:120px;
+    margin-bottom:20px;
+}
+
+h1{
+    margin-bottom:25px;
+}
+
+#playButton{
+    width:90px;
+    height:90px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    background:#d60000;
+    margin-bottom:25px;
+}
+
+#playButton img{
+    width:40px;
+}
+
+#volume{
+    width:100%;
+    margin-bottom:20px;
+}
+
+#statusText{
+    font-size:18px;
+    font-weight:bold;
+}
