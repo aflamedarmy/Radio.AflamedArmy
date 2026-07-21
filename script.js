@@ -3,8 +3,6 @@ const playButton = document.getElementById("playButton");
 const playIcon = document.getElementById("playIcon");
 const volume = document.getElementById("volume");
 const statusText = document.getElementById("statusText");
-const liveText = document.getElementById("liveText");
-const liveDot = document.getElementById("liveDot");
 
 // Set initial volume
 radio.volume = volume.value;
@@ -31,47 +29,29 @@ playButton.addEventListener("click", () => {
 });
 
 // Playing
-// Playing
 radio.addEventListener("playing", () => {
 
     playIcon.src = "icons/pause.svg";
 
-    statusText.textContent = "🟢 Connected";
-
-    liveText.textContent = "LIVE ON AIR";
-
-    liveDot.classList.remove("offline");
-    liveDot.classList.add("online");
+    statusText.textContent = "Connected";
 
 });
 
-// Paused
 // Paused
 radio.addEventListener("pause", () => {
 
     playIcon.src = "icons/play.svg";
 
-    statusText.textContent = "⏸ Stopped";
-
-    liveText.textContent = "OFF AIR";
-
-    liveDot.classList.remove("online");
-    liveDot.classList.add("offline");
+    statusText.textContent = "Stopped";
 
 });
 
-// Error
 // Error
 radio.addEventListener("error", () => {
 
     playIcon.src = "icons/play.svg";
 
-    statusText.textContent = "🔴 Stream Offline";
-
-    liveText.textContent = "OFF AIR";
-
-    liveDot.classList.remove("online");
-    liveDot.classList.add("offline");
+    statusText.textContent = "Stream Offline";
 
 });
 
