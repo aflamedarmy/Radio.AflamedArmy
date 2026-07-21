@@ -54,3 +54,29 @@ h1{
     font-size:18px;
     font-weight:bold;
 }
+
+.live-status{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-top:20px;
+    margin-bottom:10px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.dot{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+}
+
+.offline{
+    background:#666666;
+}
+
+.online{
+    background:#ff0000;
+    box-shadow:0 0 12px #ff0000;
+}
